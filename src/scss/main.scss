@@ -1,0 +1,155 @@
+@import 'config';
+
+//Home page
+.home {
+    background-image: $home-image;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    div{
+        margin: auto;
+        p {
+            font-size: 2rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color:#ccc;
+            span{
+                font-size: 3rem;
+                color: rgb(39, 224, 14);
+                span{
+                    color: rgb(14, 192, 224)
+                }
+            }
+        }
+    }
+    
+}
+
+//Nav page
+ .nav {
+     background-color: #459FC1;
+     padding: 0.8rem;
+     a {
+         color: #ccc;
+         display: inline-block;
+         padding-left: 2rem;
+         padding-right: 5rem;
+         font-size: 1.2rem;
+         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     }
+ }
+
+ //About page
+ .about {
+     display: flex;
+     flex-direction: column;
+
+    span{
+        margin: 2rem auto; 
+        font-size: 2.5rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-decoration: underline;
+    }
+    p{
+        margin: 0 10rem;
+        font-size: 1.6rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: justify;
+        text-justify: inter-word;
+        
+    }
+    p::first-letter{
+            font-size: 3rem;
+            color: #8884D8;
+    }
+
+    div{
+        margin: 2rem 0;
+        display: flex;
+        flex-wrap: wrap;
+        section {
+            margin: auto;
+            text-align: center;
+            span{
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+ }
+
+ //Portfolio page
+ .portfolio {
+    display: flex;
+    flex-direction: column;
+    background-color: #459FC1;
+    span{
+        margin: 2rem auto; 
+        font-size: 2.5rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-decoration: underline;
+    }
+   
+    div{
+
+        display: inline-flex;
+        flex-wrap: wrap;
+        margin: auto;
+        
+
+        .project{
+            position: relative;
+            a{
+                display: block;
+                position: absolute;
+                background-color: rgb(44, 150, 236);
+                width: 100%;
+                height: 100%;
+                z-index: 1;
+                opacity: 0.7;                 
+            }
+            a:hover{
+                opacity: 0;
+            }
+            .p-2{
+                background-color: rgb(224, 80, 14);
+            }
+            .p-3{
+                background-color: rgb(15, 184, 127);
+            }
+            .p-4{
+                background-color: rgb(194, 47, 10);
+            }
+            
+        }
+    } 
+ }
+
+ //Contact page
+ .contact {
+    display: flex;
+    flex-direction: column;
+    span{
+        margin: 2rem auto; 
+        font-size: 2.5rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-decoration: underline;
+     }
+     .section{
+         display: flex;
+         flex-direction: row;
+     }
+     div{
+         margin-left: 3rem;
+     }
+     p{
+         font-size: 1.8rem;
+     }
+     .icon-2{
+         display: inline-block;
+         margin: 6rem 3rem 3rem 3rem;
+         padding: 2rem;
+         background-color: rgb(233, 75, 12);
+         border-radius: 50%;
+     }
+ }
